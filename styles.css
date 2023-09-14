@@ -8,62 +8,65 @@ ul {
 }
 svg {
   fill: #ffffff;
-  width: 10px;
-  height: 10px;
-  margin-left: 5px;
+  width: 20px;
+  height: 20px;
 }
 button {
   background-color: #1992d4;
   border: none;
-  padding: 5px 10px;
-  border-radius: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
   color: white;
   cursor: pointer;
-  font-size: 8px;
-  width: 50px;
+  font-size: 16px;
+  width: 100px;
   font-weight: bold;
 }
 .navigation svg {
-  margin-left: 0;
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
 }
 li {
   display: flex;
-  gap: 12px;
+  gap: 15px;
   align-items: center;
-  margin-bottom: 6px;
+  margin-bottom: 20px;
 }
 .container {
   display: grid;
   height: 100vh;
-  grid: 1fr 5fr/ 1fr 4fr;
+  grid: 1fr 6fr/ 1fr 5fr;
 }
 .sidebar {
   background-color: #1992d4;
   grid-row: 1/3;
   color: white;
   display: grid;
-  grid-template-rows: 1fr 8fr;
-  padding: 10px;
+  grid-template-rows: 1fr 10fr;
 }
 .navigation {
   /* border: solid 2px white; */
   display: flex;
-  gap: 5px;
+  align-items: center;
+  font-size: 28px;
 }
 
 .branding {
   /* border: solid 2px white; */
   display: grid;
   grid-template-rows: 2fr 3fr;
-  font-size: 10px;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-top: 50px;
 }
 
 .header {
   background-color: #ffffff;
+  /* border: solid 2px black; */
+  display: grid;
 }
 .top-header {
+  /* border: solid 2px black; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 10px 20px 10px 20px;
@@ -72,35 +75,37 @@ li {
 .top-header > div {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 .top-header > div:last-child {
   justify-self: end;
-  font-size: 10px;
+  font-size: 20px;
 }
 .top-header svg {
   fill: black;
+  height: 30px;
+  width: 30px;
 }
 .search-bar {
-  padding: 5px;
-  height: 18px;
+  padding: 15px;
+  height: 30px;
   border: none;
   border-radius: 10px;
-  width: 300px;
+  width: 900px;
   background-color: #e2e8f0;
 }
 .sub-header {
+  /* border: solid 2px black; */
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 0px 20px 10px 20px;
+  padding: 10px 20px 10px 20px;
   align-items: center;
-  gap: 160px;
-  font-size: 12px;
+  font-size: 24px;
 }
 .buttons {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  display: flex;
+  gap: 20px;
+  justify-self: flex-end;
 }
 .main-content {
   background-color: #e2e8f0;
@@ -116,7 +121,7 @@ li {
   grid-template-rows: 1fr 20fr;
 }
 .grid-main-wrapper h2 {
-  font-size: 8px;
+  font-size: 20px;
 }
 .grid-wrapper {
   display: grid;
@@ -124,64 +129,69 @@ li {
   row-gap: 5px;
 }
 .grid-wrapper h2 {
-  font-size: 8px;
+  font-size: 20px;
 }
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
 }
 .card {
-  border-left: #f0b429 solid 3px;
-  border-radius: 5px;
+  border-left: #f0b429 solid 5px;
+  border-radius: 15px;
   background-color: white;
-  box-shadow: black;
-  padding: 15px;
-  display: grid;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 .card p {
-  font-size: 8px;
+  font-size: 20px;
   color: gray;
   font-weight: 100;
 }
 .side-content {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
   padding: 10px;
   grid-row: 1/3;
   row-gap: 20px;
 }
 .announcements {
   background-color: white;
-  border-radius: 5px;
-  display: grid;
-  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 30px;
 }
 .announcement-card {
   border-bottom: rgb(197, 195, 195) 0.5px solid;
-  margin-bottom: 5px;
+  padding-bottom: 20px;
 }
 .announcement-card p {
-  font-size: 6px;
+  font-size: 14px;
   color: gray;
   font-weight: 100;
 }
 .announcement-card h6 {
-  font-size: 6px;
+  font-size: 16px;
 }
 .announcement-card:last-child {
   border: none;
-  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .trending {
   background-color: white;
-  border-radius: 5px;
-  padding: 10px;
-  display: grid;
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .trending-item h6,
 .trending-item p {
-  font-size: 6px;
+  font-size: 18px;
   font-weight: 100;
 }
 .trending-item p {
